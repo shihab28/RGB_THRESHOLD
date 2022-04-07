@@ -6,14 +6,14 @@ rootDir = os.path.dirname(__file__).replace("\\", "/")
 ImageDir = f"{rootDir}/resources/image"
 ScriptDir = f"{rootDir}/resources/scripts"
 
-redMin = np.array([50, 110, 40])
-redMax = np.array([255, 130, 255])
+redMin = np.array([50, 0, 0])
+redMax = np.array([255, 125, 125])
 
-grnMax = np.array([170, 255, 170])
-grnMin = np.array([0, 255, 0])
+grnMax = np.array([0, 20, 0])
+grnMin = np.array([180, 255, 150])
 
-bluMin = np.array([110,50,50])
-bluMax = np.array([130,255,255])
+bluMin = np.array([0, 0, 20])
+bluMax = np.array([140, 200, 255])
 
 imageExtList = ['png', 'jpg', "jepg", "ico", "gif", "bmp"]
 
