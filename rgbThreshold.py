@@ -54,15 +54,15 @@ def loadImage(tempDir=ImageDir):
             
             redMask = cv2.inRange(mainImage, redMin, redMax)
             redImage = cv2.bitwise_and(mainImage, mainImage, mask=redMask)
-            imageDict[getNameOnly(imName)]['red'] = redMask
+            imageDict[getNameOnly(imName)]['red'] = redImage
 
             grnMask = cv2.inRange(mainImage, grnMin, grnMax)
             grnImage = cv2.bitwise_and(mainImage, mainImage, mask=grnMask)
-            imageDict[getNameOnly(imName)]['green'] = grnMask
+            imageDict[getNameOnly(imName)]['green'] = grnImage
 
             bluMask = cv2.inRange(mainImage, bluMin, bluMax)
             bluImage = cv2.bitwise_and(mainImage, mainImage, mask=bluMask)
-            imageDict[getNameOnly(imName)]['blue'] = bluMask
+            imageDict[getNameOnly(imName)]['blue'] = bluImage
 
     return imageDict
 
